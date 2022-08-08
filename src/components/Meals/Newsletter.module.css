@@ -1,0 +1,9 @@
+.newsletter {
+    text-align: center;
+    background-color: #2a2a2a9e;
+    padding: 1em;
+    margin: 1em;
+    font-size: 2em;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 0 5px whitesmoke;
+}

@@ -1,0 +1,64 @@
+.cart-button {
+    color: #9b4dd7;
+    background-color: whitesmoke;
+    padding: 0 1em;
+    border-radius: 50px;
+    font-size: 1em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+}
+
+.cart-button span {
+    padding-inline: .2em;
+}
+
+.cart-button:hover {
+    color: #9b4dd7;
+    cursor: pointer;
+}
+
+.cart-button:focus {
+    outline: none;
+    box-shadow: none;
+    opacity: .8;
+}
+
+.total-counter {
+    display: flex;
+    justify-content: center;
+}
+
+.total-counter span {
+    position: absolute;
+    color: whitesmoke;
+    font-size: .5em;
+}
+
+.bump {
+    animation-name: bump;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.5);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    75% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

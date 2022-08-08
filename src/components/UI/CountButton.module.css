@@ -1,0 +1,52 @@
+.count-button {
+    width: 50%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #6e18af;
+    border-radius: 10px;
+}
+
+.add-button {
+    width: 50%;
+    text-align: center;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    border: 2px solid #6e18af;
+    border-radius: 10px;
+}
+
+.count-button span,
+.add-button span {
+    padding-inline: .5em;
+}
+
+
+.count-button button {
+    color: whitesmoke;
+}
+
+.count-button button:hover,
+.count-button button:focus {
+    color: whitesmoke;
+    outline: none;
+    box-shadow: none;
+}
+
+.add-button button {
+    color: #6e18af;
+    width: 100%;
+    padding: 0;
+}
+
+.add-button button:hover,
+.add-button button:focus {
+    color: #6e18af;
+    width: 100%;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+button:hover {
+    cursor: pointer;
+}

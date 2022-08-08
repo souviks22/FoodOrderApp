@@ -1,0 +1,7 @@
+.food-corner {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9b4dd7;
+}
