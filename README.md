@@ -1,2 +1,2 @@
 # FoodOrderApp
-Food Order UI
+UI for ordering food on demand
