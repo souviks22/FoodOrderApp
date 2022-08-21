@@ -1,0 +1,35 @@
+.form {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+form {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    padding: .5em 1em;
+    margin-top: 1em;
+}
+
+.actions button {
+    font-size: 1.5em;
+}
+
+.error {
+    text-align: center;
+    color: red;
+    padding: 1em;
+    margin: 1em;
+}
+
+.error i {
+    margin-inline: .5em;
+}

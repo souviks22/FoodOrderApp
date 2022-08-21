@@ -1,0 +1,18 @@
+.input label {
+    margin-top: .5em;
+    margin-left: .5em;
+}
+
+.input input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.invalid label {
+    color: red;
+}
+
+.invalid input,
+.invalid input:focus {
+    background-color: rgba(255, 143, 143, 0.722);
+}

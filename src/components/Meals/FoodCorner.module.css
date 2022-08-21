@@ -5,3 +5,16 @@
     align-items: center;
     background-color: #9b4dd7;
 }
+
+.error {
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+    font-size: 1em;
+    color: red;
+    background-color: white;
+}
+
+.error i {
+    margin-inline: .5em;
+}

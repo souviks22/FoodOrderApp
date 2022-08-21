@@ -10,7 +10,7 @@ const Modal = (props) => {
             <h2>Your Cart</h2>
             <i className="fa-solid fa-xmark" onClick={props.onClose}></i>
         </div>
-        <Cart />
+        <Cart onOrder={props.onClose} />
     </Card>)
 }
 

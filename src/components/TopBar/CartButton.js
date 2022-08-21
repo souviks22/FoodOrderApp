@@ -7,7 +7,7 @@ const CartButton = (props) => {
     const { cart, totalFood } = useContext(CartContext)
     useEffect(() => {
         setHasBump(true)
-        const animate = setTimeout(() => { setHasBump(false) }, 500)
+        const animate = setTimeout(() => { setHasBump(false) }, 300)
         return () => { clearTimeout(animate) }
     }, [cart])
     return (

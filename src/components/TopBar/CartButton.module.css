@@ -37,7 +37,7 @@
 
 .bump {
     animation-name: bump;
-    animation-duration: .5s;
+    animation-duration: .3s;
     animation-timing-function: ease-out;
 }
 
@@ -47,15 +47,15 @@
     }
 
     25% {
-        transform: scale(1.5);
+        transform: scale(1.25);
     }
 
     50% {
-        transform: scale(2);
+        transform: scale(1.5);
     }
 
     75% {
-        transform: scale(1.5);
+        transform: scale(1.25);
     }
 
     100% {

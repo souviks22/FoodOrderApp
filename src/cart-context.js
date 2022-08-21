@@ -4,7 +4,8 @@ const CartContext = React.createContext({
     cart: [],
     addFood: () => { },
     removeFood: () => { },
-    totalFood: 0
+    totalFood: 0,
+    clearCart: () => { }
 })
 
 const initialCartState = {
@@ -13,6 +14,9 @@ const initialCartState = {
 }
 
 const cartReducer = (state, action) => {
+    if (action.type === 'clear')
+        return initialCartState;
+
     const foodIndex = state.cart.findIndex(cartItem => cartItem.id === action.foodItem.id)
     if (action.type === 'increase') {
         let updatedCart = null
@@ -21,7 +25,6 @@ const cartReducer = (state, action) => {
         else {
             updatedCart = [...state.cart]
             updatedCart[foodIndex].count++
-            console.log('running')
         }
         return {
             cart: updatedCart,
@@ -37,7 +40,7 @@ const cartReducer = (state, action) => {
             totalFood: state.totalFood - 1
         }
     } else
-        return initialCartState
+        return state
 }
 
 export const CartContextProvider = (props) => {
@@ -48,12 +51,16 @@ export const CartContextProvider = (props) => {
     const removeFood = foodItem => {
         dispatchCart({ type: 'decrease', foodItem })
     }
+    const clearCart = () => {
+        dispatchCart({ type: 'clear' })
+    }
 
     return (<CartContext.Provider value={{
         cart: cartState.cart,
         addFood,
         removeFood,
-        totalFood: cartState.totalFood
+        totalFood: cartState.totalFood,
+        clearCart
     }}>
         {props.children}
     </CartContext.Provider>)
