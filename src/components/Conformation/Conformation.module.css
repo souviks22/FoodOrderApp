@@ -1,0 +1,46 @@
+.conform {
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conform p {
+    color: #6e18af;
+}
+
+.conform i {
+    margin-inline: .5rem;
+}
+
+.checkmark {
+    width: 10%;
+}
+
+.checkmark img {
+    animation: upside .5s ease-in;
+}
+
+@keyframes upside {
+    0% {
+        opacity: 0.05;
+    }
+
+    25% {
+        opacity: 0.1;
+
+    }
+
+    50% {
+        opacity: 0.15;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

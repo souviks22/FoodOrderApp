@@ -30,7 +30,8 @@ const cartReducer = (state, action) => {
             cart: updatedCart,
             totalFood: state.totalFood + 1
         }
-    } else if (action.type === 'decrease') {
+    }
+    if (action.type === 'decrease') {
         let updatedCart = [...state.cart]
         const currentCount = --updatedCart[foodIndex].count
         if (!currentCount)
@@ -39,8 +40,8 @@ const cartReducer = (state, action) => {
             cart: updatedCart,
             totalFood: state.totalFood - 1
         }
-    } else
-        return state
+    }
+    return state
 }
 
 export const CartContextProvider = (props) => {
