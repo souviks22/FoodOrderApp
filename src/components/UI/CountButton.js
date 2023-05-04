@@ -13,22 +13,26 @@ const CountButton = (props) => {
         cartCtx.removeFood(props.foodInfo)
     }
 
-    if (!cartCtx.cart[foodIndex])
-        return (<div className={styles['add-button']}>
-            <button className='btn' onClick={increaseHandler}>
-                <i className="fa-solid fa-plus"></i><span>Add</span>
-            </button>
-        </div>)
-
-    return (<div className={styles['count-button']}>
-        <button className='btn' onClick={decreaseHandler}>
-            <i className="fa-solid fa-minus"></i>
-        </button>
-        <span>{cartCtx.cart[foodIndex].count}</span>
-        <button className='btn' onClick={increaseHandler}>
-            <i className="fa-solid fa-plus"></i>
-        </button>
-    </div>)
+    return (<>
+        {!cartCtx.cart[foodIndex]
+            ?
+            <div className={styles['add-button']}>
+                <button className='btn' onClick={increaseHandler}>
+                    <i className="fa-solid fa-plus"></i><span>Add</span>
+                </button>
+            </div>
+            :
+            <div className={styles['count-button']}>
+                <button className='btn' onClick={decreaseHandler}>
+                    <i className="fa-solid fa-minus"></i>
+                </button>
+                <span>{cartCtx.cart[foodIndex].count}</span>
+                <button className='btn' onClick={increaseHandler}>
+                    <i className="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        }
+    </>)
 }
 
 export default CountButton

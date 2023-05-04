@@ -7,3 +7,11 @@
     border: 1px solid whitesmoke;
     box-shadow: 0 0 5px whitesmoke;
 }
+
+@media (max-width: 768px) {
+    .newsletter {
+        width: 90%;
+        font-size: 1.5em;
+        margin: 0;
+    }
+}

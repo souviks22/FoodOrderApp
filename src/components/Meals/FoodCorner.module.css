@@ -18,3 +18,10 @@
 .error i {
     margin-inline: .5em;
 }
+
+@media (max-width: 768px) {
+    .food-corner {
+        width: 90%;
+        margin-block: 1.5em;
+    }
+}

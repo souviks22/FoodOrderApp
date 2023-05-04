@@ -23,3 +23,18 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    .food-item {
+        flex-direction: column;
+    }
+
+    .action {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    h4 {
+        padding-bottom: 0.5em;
+    }
+}

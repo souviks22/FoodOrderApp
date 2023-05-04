@@ -28,3 +28,19 @@
     width: 100%;
     transform: translateY(-20%) scale(1.1);
 }
+
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        padding: 1em 2em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .top-img {
+        display: none;
+    }
+}

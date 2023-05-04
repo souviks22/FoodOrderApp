@@ -1,18 +1,22 @@
-.count-button {
+.count-button,
+.add-button {
     width: 50%;
-    text-align: center;
-    color: whitesmoke;
-    background-color: #6e18af;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
 }
 
+.count-button {
+    color: whitesmoke;
+    background-color: #6e18af;
+}
+
 .add-button {
-    width: 50%;
-    text-align: center;
+    color: #6e18af;
     background-color: whitesmoke;
-    box-sizing: border-box;
     border: 2px solid #6e18af;
-    border-radius: 10px;
 }
 
 .count-button span,
@@ -34,15 +38,12 @@
 
 .add-button button {
     color: #6e18af;
-    width: 100%;
-    padding: 0;
 }
 
 .add-button button:hover,
 .add-button button:focus {
     color: #6e18af;
     width: 100%;
-    padding: 0;
     outline: none;
     box-shadow: none;
 }
