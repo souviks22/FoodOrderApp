@@ -24,3 +24,14 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    .action {
+        min-width: 60%;
+        flex-direction: column;
+    }
+
+    .action div {
+        width: 60%;
+    }
+}

@@ -24,3 +24,10 @@
     position: fixed;
     z-index: 20;
 }
+
+@media (max-width: 768px) {
+    .modal {
+        width: 95%;
+        left: 2.5%;
+    }
+}
